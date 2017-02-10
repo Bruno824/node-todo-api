@@ -22,4 +22,6 @@ app.post('/todos', (req, res) => {
 
 app.listen(3000, () => {
   console.log('Working at localhost:3000');
-})
+});
+
+module.exports = {app};

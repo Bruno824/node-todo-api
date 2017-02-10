@@ -2,6 +2,10 @@
   "name": "node-todo-api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"yarn test\""
+  },
   "repository": {},
   "author": "Bruno Felipe",
   "license": "MIT",
@@ -10,5 +14,11 @@
     "express": "^4.14.1",
     "mongodb": "^2.2.22",
     "mongoose": "^4.8.1"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
   }
 }
